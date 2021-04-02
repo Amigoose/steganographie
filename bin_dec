@@ -1,0 +1,9 @@
+def bin_dec(nombre):
+  nombre=str(nombre)
+  p=len(nombre)-1
+  nombred=0
+  for caractere in nombre:
+    nombred=nombred+int(caractere)*2**p
+    p=p-1
+  nombred=str(nombred)
+  return nombred
