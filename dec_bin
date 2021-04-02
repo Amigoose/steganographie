@@ -1,0 +1,11 @@
+def dec_bin(nombre):
+  nombre=int(nombre)
+  q=1
+  r=0
+  nombreb=""
+  while q!=0:
+    q=nombre//2
+    r=nombre%2
+    nombreb=str(r)+nombreb
+    nombre=q
+  return nombreb
